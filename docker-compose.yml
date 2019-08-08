@@ -45,6 +45,8 @@ services:
     privileged: true
     depends_on:
       - ws
+    labels:
+        io.balena.features.kernel-modules: '1'
   supervisor:
     build: ./supervisor
     restart: always
