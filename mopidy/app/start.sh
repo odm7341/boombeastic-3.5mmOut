@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Remove default audio
-rmmod snd_bcm2835  >/dev/null 2>&1 || true
+#rmmod snd_bcm2835  >/dev/null 2>&1 || true
 
 # Ensure mopidy folders are there
 mkdir -p /data/mopidy/local >/dev/null 2>&1 || true

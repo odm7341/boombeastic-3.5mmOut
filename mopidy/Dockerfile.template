@@ -95,7 +95,7 @@ RUN apt-get update && apt-get install -yq --no-install-recommends wget \
 COPY ./Dockerbin/mopidy.conf /etc/mopidy/mopidy.conf
 
 # Configure DAC
-COPY ./Dockerbin/asound.conf /etc/asound.conf
+#COPY ./Dockerbin/asound.conf /etc/asound.conf
 
 # Move app to filesystem
 COPY ./app ./
