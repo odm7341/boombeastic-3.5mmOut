@@ -3,6 +3,9 @@
 # Remove default audio
 #rmmod snd_bcm2835  >/dev/null 2>&1 || true
 
+printf "Setting volume to 100%%\n"
+amixer sset PCM,0 100% > /dev/null &
+
 # Set raspotify to show the device name using resin device name
 sed -i -e "s/BoomBeastic/$BALENA_DEVICE_NAME_AT_INIT/g" /etc/default/raspotify
 if [ "$SPOTIFY_USERNAME" ] && [ "$SPOTIFY_PASSWORD" ]; then
