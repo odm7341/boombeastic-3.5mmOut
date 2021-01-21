@@ -53,6 +53,6 @@
     "express": "~4.16.3",
     "lodash": "^4.17.13",
     "serve-static": "~1.13.2",
-    "socket.io": "^2.1.1"
+    "socket.io": "^2.4.0"
   }
 }
